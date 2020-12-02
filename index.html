@@ -3,45 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coding Quiz</title>
-
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CodeMaster Challenge</title>
   </head>
-
   <body>
-    <div class="scores"><a href="highscores.html">View Highscores</a></div>
+  <div id="main" class=communication>
+    <h1 id="title">CodeMaster Challenge Quiz Challenge</h1>
+<h2>Below Is Your Challenge</h2>
+  <div id="articles">
 
-    <div class="timer">Time: <span id="time">0</span></div>
+ 
+    
+    <img class="fashion" src="./assets/the-citadel-ferriere-1171942_1920.jpg" alt="fashion show">
+    <h3 class="artTitle">
+        <article>
+        Try to answer the following code-related questions within the time limit. Correct answers are worth one point and will increase your timer by two seconds. Incorrect answers will deduct ten seconds. Final score is the total of correct questions answered and time remaining on the clock.</h3>
+    </article>
+  </div>
 
-    <div class="wrapper">
-      <div id="start-screen" class="start">
-        <h1>Coding Quiz Challenge</h1>
-        <p>
-          Try to answer the following code-related questions within the time
-          limit. Keep in mind that incorrect answers will penalize your
-          score/time by ten seconds!
-        </p>
-        <button id="start">Start Quiz</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-12" id = "embark">
+    <button type="button" class="btn btn-primary btn-lg btn-block" id = "start">Click Here to Embark on Your Journey!!!</button> 
+</div>
+
+    <div id="questions" >
+        <h1 class="time"></h1>
+        <h1 class="score"></h1>
+
+        <h2 id="questionPlaceHolder"></h2>
+        <p><button text-align = "center" id="choices0" class="choices"></button></p>
+        <p><button text-align = "center" id="choices1" class="choices"></button></p>
+        <p><button text-align = "center" id="choices2" class="choices"></button></p>
+        <p><button text-align = "center" id="choices3" class="choices"></button></p>
       </div>
+    
 
-      <div id="questions" class="hide">
-        <h2 id="question-title"></h2>
-        <div id="choices" class="choices"></div>
-      </div>
-
-      <div id="end-screen" class="hide">
-        <h2>All done!</h2>
-        <p>Your final score is <span id="final-score"></span>.</p>
+      <div id="close" class="hideClose">
+        <h2>You are Triumphant!</h2>
+        <p>Your Mastered score is:  <span id="final-score"></span></p>
         <p>
-          Enter initials: <input type="text" id="initials" max="3" />
+          Sketch your initials into Eternity: <input type="text" id="eternity"  />
           <button id="submit">Submit</button>
         </p>
       </div>
+   
+</div>
+</div>
+</div>
+</div>
 
-      <div id="feedback" class="feedback hide"></div>
-    </div>
 
-    <script src="./assets/js/questions.js"></script>
-    <script src="./assets/js/logic.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="./assets/questions.js"></script>
+<script src="./assets/script.js"></script>
+
   </body>
 </html>
